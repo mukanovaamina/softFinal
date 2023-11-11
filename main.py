@@ -46,7 +46,7 @@ def main():
     dumplings = Dumplings(name="Dumplings")  # Создание экземпляра Dumplings с указанием имени
     sauce_dumplings = SauceDecorator(dumplings)  # Декорирование Dumplings с соусом
     cheese_sauce_dumplings = CheeseDecorator(sauce_dumplings)  # Декорирование Dumplings с соусом и сыром
-
+    cheese_sauce_dumplings.prepare()
 
     # Стратегия
     steaming_strategy = SteamingStrategy()
