@@ -33,7 +33,6 @@ def main():
     dumplings_instance = Dumplings(name="Dumplings")
     dumplings_instance.prepare()
 
-
     # Наблюдатель
     cooking_step = Dumplings(name="Dumplings")  # Создание экземпляра Dumplings с указанием имени
     cook_observer = Cook()
