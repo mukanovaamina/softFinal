@@ -1,7 +1,9 @@
 from recipe import Recipe
 from culinary_process import CulinaryProcess
 from plov_builder import PlovBuilder
+from plov import Plov
 from manti_builder import MantiBuilder
+from manti import Manti
 from cook import Cook
 from timer import Timer
 from dumpling import Dumplings
@@ -24,6 +26,13 @@ def main():
     manti_builder = MantiBuilder()
     plov_dish = plov_builder.create_dish()  # Создание блюда с использованием фабричного метода
     manti_dish = manti_builder.create_dish()
+    manti_instance = Manti()
+    manti_instance.prepare()
+    plov_instance = Plov()
+    plov_instance.prepare()  # Добавлен вызов метода prepare для Plov
+    dumplings_instance = Dumplings(name="Dumplings")
+    dumplings_instance.prepare()
+
 
     # Наблюдатель
     cooking_step = Dumplings(name="Dumplings")  # Создание экземпляра Dumplings с указанием имени
@@ -35,14 +44,9 @@ def main():
 
     # Декоратор
     dumplings = Dumplings(name="Dumplings")  # Создание экземпляра Dumplings с указанием имени
-    cook_observer = Cook()
-    timer_observer = Timer()
-    dumplings.add_observer(cook_observer)
-    dumplings.add_observer(timer_observer)
-
     sauce_dumplings = SauceDecorator(dumplings)  # Декорирование Dumplings с соусом
     cheese_sauce_dumplings = CheeseDecorator(sauce_dumplings)  # Декорирование Dumplings с соусом и сыром
-    cheese_sauce_dumplings.prepare()  # Вызов метода prepare после декорации
+
 
     # Стратегия
     steaming_strategy = SteamingStrategy()
