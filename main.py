@@ -1,9 +1,10 @@
-from recipe import Recipe, CulinaryProcess
+from recipe import Recipe
+from culinary_process import CulinaryProcess
 from plov_builder import PlovBuilder
 from manti_builder import MantiBuilder
 from cook import Cook
 from timer import Timer
-from dumplings import Dumplings
+from dumpling import Dumplings
 from sauce_decorator import SauceDecorator
 from cheese_decorator import CheeseDecorator
 from cooking_context import CookingContext
@@ -15,17 +16,17 @@ from culinary_expert import CulinaryExpert
 
 def main():
     # Одиночка
-    recipe_instance = Recipe()
+    recipe_instance = Recipe()  # Создание единственного экземпляра рецепта
     culinary_process = CulinaryProcess(recipe_instance)
 
     # Фабричный метод
     plov_builder = PlovBuilder()
     manti_builder = MantiBuilder()
-    plov_dish = plov_builder.create_dish()
+    plov_dish = plov_builder.create_dish()  # Создание блюда с использованием фабричного метода
     manti_dish = manti_builder.create_dish()
 
     # Наблюдатель
-    cooking_step = Dumplings()
+    cooking_step = Dumplings(name="Dumplings")  # Создание экземпляра Dumplings с указанием имени
     cook_observer = Cook()
     timer_observer = Timer()
     cooking_step.add_observer(cook_observer)
@@ -33,10 +34,15 @@ def main():
     cooking_step.notify_observers()
 
     # Декоратор
-    dumplings = Dumplings()
-    sauce_dumplings = SauceDecorator(dumplings)
-    cheese_sauce_dumplings = CheeseDecorator(sauce_dumplings)
-    cheese_sauce_dumplings.prepare()
+    dumplings = Dumplings(name="Dumplings")  # Создание экземпляра Dumplings с указанием имени
+    cook_observer = Cook()
+    timer_observer = Timer()
+    dumplings.add_observer(cook_observer)
+    dumplings.add_observer(timer_observer)
+
+    sauce_dumplings = SauceDecorator(dumplings)  # Декорирование Dumplings с соусом
+    cheese_sauce_dumplings = CheeseDecorator(sauce_dumplings)  # Декорирование Dumplings с соусом и сыром
+    cheese_sauce_dumplings.prepare()  # Вызов метода prepare после декорации
 
     # Стратегия
     steaming_strategy = SteamingStrategy()
