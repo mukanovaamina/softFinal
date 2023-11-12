@@ -32,6 +32,7 @@ The primary purpose of “Recipe master “is to showcase the effective implemen
 1) Single:
    
 Challenge: Ensure that a class has only one instance and find a global access point to that instance.
+
 Code Application: Ensure that you only have one instance of a recipe to avoid creating duplicate data.
 
 1.1) Recipe:
@@ -41,7 +42,9 @@ This class is used to create a single instance of a recipe, which corresponds to
 The class uses Singleton, represents the process of preparing a dish, and it takes an instance of the Recipe class as an argument and can be considered a piece of general information about the cooking process that can be used in various parts of the program.
 
 2)Factory method:
+
 Challenge: Provide an interface for instantiating our object, but allow subclasses to change the types of the instances.
+
 Code Application: Creator classes (PlovBuilder, MantiBuilder) define factory methods for creating specific objects (Plov, Manti).
 
 2.1)Dish, Dumplings, Plov, Manti:
@@ -53,6 +56,7 @@ The DishBuilder, PlovBuilder, MantiBuilder classes are builders for their respec
 3)Observer:
 
 Challenge: Define a one-to-many dependency between objects in such a way that when the state of one object is supplied, all details from it are transferred, deleted and updated automatically.
+
 Code Application: Cook and Timer watch the Dumplings object and react to its changes.
 
 3.1)Cook, Timer:
@@ -61,6 +65,8 @@ The Cook and Timer classes are observers and are used together with the Dumpling
 4)Decorator:
 
 Challenge: Dynamically add objects to new responsibilities without changing their code.
+
+
 Code Application: SauceDecorator and CheeseDecorator add sauce and cheese functionality to the Dumplings object.
 
 4.1)SauceDecorator, CheeseDecorator:
@@ -69,20 +75,22 @@ The SauceDecorator and CheeseDecorator classes are decorators for adding sauce a
 5)Strategy:
 
 Challenge: Define a family of algorithms, encapsulate each of them, and make them interchangeable.
+
 Code Application: SteamingStrategy and BoilingStrategy provide different cooking strategies, and the CookingContext object chooses to use them.
 
 5.1)CookingContext, SteamingStrategy, BoilingStrategy:
 The CookingContext, SteamingStrategy, BoilingStrategy classes represent the cooking strategy for a dish. CookingContext uses strategies to change cooking behavior depending on the selected strategy.
 
 6) Command:
-7) 
+ 
 Challenge: Encapsulate a request as an object, allow clients to parameterize different requests, organize requests into queues, and support cancellation of operations.
+
 Code Application: SaltCommand and PepperCommand provide commands, and CulinaryExpert executes them on demand.
 
 6.1) SaltCommand, PepperCommand, CulinaryExpert:
 The classes SaltCommand, PepperCommand represent commands, and CulinaryExpert represents the command executor. This corresponds to the Command pattern.
 
-![UML](https://github.com/mukanovaamina/image/blob/1a7799e4dc4d4814957abe59a595d72948e03cc1/screen.jpg)
+![Output](https://github.com/mukanovaamina/image/blob/1a7799e4dc4d4814957abe59a595d72948e03cc1/screen.jpg)
 
 
 *UML-diagram*
