@@ -7,12 +7,15 @@
 "Recipe master" is a Python-based application designed to assist users in mastering their culinary skills. The project incorporates various design patterns to enhance the structure, maintainability, and extensibility of the codebase.  
 
 *Idea of the Project:*
+
 The idea behind “Recipe master “is to create a platform for users to create, and follow cooking recipes. It offers a set of features that cover dish preparation and cooking strategies. By implementing design patterns, the project aims to demonstrate best practices in software design, ensuring adaptable solution. 
 
 *Purpose of the Work:* 
+
 The primary purpose of “Recipe master “is to showcase the effective implementation of software design patterns, specifically focusing on the Singleton, Factory Method, Observer, Decorator, Strategy, and Command patterns. These patterns are strategically applied to different aspects of the application, providing users with dynamic culinary experience. 
 
-*Objectives of the Work:* 
+*Objectives of the Work:*
+
 1. Design Pattern Implementation: Implement six essential design patterns (Singleton, Factory Method, Observer, Decorator, Strategy, and Command) to enhance the overall architecture of the application.
 
 2. User-Friendly Interface: Develop a user-friendly command-line interface (CLI) that enables users to interact intuitively with the application. The interface should facilitate recipe creation, dish preparation, and strategy selection.
@@ -76,6 +79,7 @@ The classes SaltCommand, PepperCommand represent commands, and CulinaryExpert re
 # Conclusion:
 
 *Key Points of the Project*
+
 The RecipeMaster project incorporates several design patterns to enhance its structure, flexibility, and maintainability. Each design pattern serves a specific purpose, contributing to the overall functionality and user experience.
 
   •Singleton Pattern:
@@ -103,6 +107,7 @@ The RecipeMaster project incorporates several design patterns to enhance its str
  Simplifies the execution of specific cooking tasks without direct interaction with the underlying system.
 
 *Project Outcomes*
+
 The RecipeMaster project successfully demonstrates the practical implementation of design patterns to achieve a modular, extensible, and user-friendly application. Key outcomes include:
 
  • Code Cleanliness:
@@ -115,6 +120,7 @@ The application provides a user-friendly command-line interface or GUI, allowing
 Each design pattern is effectively utilized, contributing to the project's overall success and demonstrating a deep understanding of software design principles.
 
 *Challenges Faced:*
+
 While implementing the project, we encountered certain challenges:
 
  • Learning Curve:
@@ -124,6 +130,7 @@ Initially, understanding and implementing some of the design patterns posed a le
 Integrating multiple design patterns required careful consideration of interactions. Ensuring a seamless integration was crucial for the success of the project.
 
 *Future Improvements*
+
 To further enhance the RecipeMaster project, we propose the following future improvements:
 
  • Graphical User Interface (GUI):
