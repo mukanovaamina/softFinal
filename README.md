@@ -5,13 +5,13 @@
 # Project Overview: 
 
 "Recipe master" is a Python-based application designed to assist users in mastering their culinary skills. The project incorporates various design patterns to enhance the structure, maintainability, and extensibility of the codebase.  
----
+
 *Idea of the Project:*
 The idea behind “Recipe master “is to create a platform for users to create, and follow cooking recipes. It offers a set of features that cover dish preparation and cooking strategies. By implementing design patterns, the project aims to demonstrate best practices in software design, ensuring adaptable solution. 
----
+
 *Purpose of the Work:* 
 The primary purpose of “Recipe master “is to showcase the effective implementation of software design patterns, specifically focusing on the Singleton, Factory Method, Observer, Decorator, Strategy, and Command patterns. These patterns are strategically applied to different aspects of the application, providing users with dynamic culinary experience. 
----
+
 *Objectives of the Work:* 
 1. Design Pattern Implementation: Implement six essential design patterns (Singleton, Factory Method, Observer, Decorator, Strategy, and Command) to enhance the overall architecture of the application.
 
@@ -22,7 +22,7 @@ The primary purpose of “Recipe master “is to showcase the effective implemen
 4. Scalability and Extensibility: Demonstrate the ability to easily extend and modify the application by allowing the addition of new dishes, cooking strategies, and decorators without major code changes.
    
 "Recipe master" strives to be a versatile and educational tool for individuals passionate about cooking. The combination of design patterns and SOLID principles aims to create a robust foundation for future enhancements and improvements.
----
+
 
 # Main body:
 *Explanation*
@@ -67,59 +67,73 @@ Code Application: SaltCommand and PepperCommand provide commands, and CulinaryEx
 The classes SaltCommand, PepperCommand represent commands, and CulinaryExpert represents the command executor. This corresponds to the Command pattern.
 
 ![UML](https://github.com/mukanovaamina/image/blob/1a7799e4dc4d4814957abe59a595d72948e03cc1/screen.jpg)
----
+
 
 *UML-diagram*
 ![UML](https://www.planttext.com/api/plantuml/png/fPH1ReCm44NtFWLBgeWBiAYYa2wwg8fAB-3QqyGgsCWsKQAsTw-DiS26f5HTXSn_ypqcVx9L6alTDJL2fCPA9Iz0M0l99qgIpG7q8pS09v3UvOE4lZrQT3NZM5vAAGYOxxOdapqqXyjQd7OTgob8PquaO0rxfexMsyeZ_8IvPZVeNW-z7TPAQB7ifpq9HYF7NvXzrxJcHWTtamsczFbDWJo1JCNma2U-vBiDo8LcxnSlg7GYNJsh4EB37TErrDmifVxmV9nZrlNA6lz2_j9MuOx07eYGM0lNdoqrtfxu2A3-xsBkRQ12S0rdxKoKDevmkEHUhOQ2TLAW_TVqAZXvuyGeLu_r_92fHRJIW9kLx4wmUYLQYAR1d3e4pa0wlV1wAbphTMG9RGjo7UiNzU5iMdG03mOfSP-vdtFY4QzvbjtxxKRJhRRrVes3xRLLjwvet2zRzFiIbSEiHcAKGJERNQF0pQr8K49H_gqufZNETQYYAB3z555APyXNu30BL0_49d6K5Y4qpOSRfNz6OHgc2ef-_43R0gVsl_y7)
 
----
 
 # Conclusion:
 
 *Key Points of the Project*
 The RecipeMaster project incorporates several design patterns to enhance its structure, flexibility, and maintainability. Each design pattern serves a specific purpose, contributing to the overall functionality and user experience.
+
   •Singleton Pattern:
  Ensures a single instance of the Recipe class, providing a centralized recipe management system.
  Enhances data consistency and avoids unintentional multiple recipe instances.
+ 
   •Factory Method Pattern:
  Utilized in the creation of different dishes through classes like DishBuilder, PlovBuilder, and MantiBuilder.
  Promotes extensibility, allowing easy addition of new dishes without modifying existing code.
+ 
   •Observer Pattern:
  Implemented for dynamic notification of cooking steps completion.
  Enhances collaboration between cooking steps and observers (Cook, Timer), allowing real-time reactions.
+ 
   •Decorator Pattern:
  Facilitates dynamic enhancement of dishes with additional features like sauce and cheese.
  Encourages a high degree of personalization in dish preparation.
+ 
   •Strategy Pattern:
  Enables the dynamic selection of cooking strategies (SteamingStrategy, BoilingStrategy) within the CookingContext.
  Supports experimentation with different cooking methods without altering core application logic.
+ 
   •Command Pattern:
  Abstracts the execution of cooking commands (SaltCommand, PepperCommand) through the CulinaryExpert.
  Simplifies the execution of specific cooking tasks without direct interaction with the underlying system.
 
 *Project Outcomes*
 The RecipeMaster project successfully demonstrates the practical implementation of design patterns to achieve a modular, extensible, and user-friendly application. Key outcomes include:
+
  • Code Cleanliness:
 The project adheres to SOLID, DRY, and KISS principles, ensuring clean, maintainable, and easily understandable code.
+
  • User-Friendly Interface:
 The application provides a user-friendly command-line interface or GUI, allowing users to interact seamlessly with the cooking and recipe management features.
+
  • Effective Utilization of Patterns:
 Each design pattern is effectively utilized, contributing to the project's overall success and demonstrating a deep understanding of software design principles.
-Challenges Faced:
+
+*Challenges Faced:*
 While implementing the project, we encountered certain challenges:
+
  • Learning Curve:
 Initially, understanding and implementing some of the design patterns posed a learning curve. However, this challenge was overcome through collaboration and thorough research.
+
  • Integration Complexity:
 Integrating multiple design patterns required careful consideration of interactions. Ensuring a seamless integration was crucial for the success of the project.
 
 *Future Improvements*
 To further enhance the RecipeMaster project, we propose the following future improvements:
+
  • Graphical User Interface (GUI):
- • Implementing a graphical user interface could provide a more visually intuitive experience for users.
+Implementing a graphical user interface could provide a more visually intuitive experience for users.
+
  • Additional Design Patterns:
- • Exploring and incorporating additional design patterns to address evolving requirements and improve system architecture.
+Exploring and incorporating additional design patterns to address evolving requirements and improve system architecture.
+
  • Recipe Suggestions and Ratings:
- • Introducing features such as recipe suggestions based on user preferences and a rating system to enhance the user experience.
+Introducing features such as recipe suggestions based on user preferences and a rating system to enhance the user experience.
  
 By addressing these future improvements, we aim to elevate RecipeMaster to an even more sophisticated and user-centric cooking application.
 
