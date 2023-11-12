@@ -81,7 +81,7 @@ Code Application: SteamingStrategy and BoilingStrategy provide different cooking
 5.1)CookingContext, SteamingStrategy, BoilingStrategy:
 The CookingContext, SteamingStrategy, BoilingStrategy classes represent the cooking strategy for a dish. CookingContext uses strategies to change cooking behavior depending on the selected strategy.
 
-6) Command:
+6)Command:
  
 Challenge: Encapsulate a request as an object, allow clients to parameterize different requests, organize requests into queues, and support cancellation of operations.
 
